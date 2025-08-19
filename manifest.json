@@ -1,0 +1,21 @@
+{
+    "manifest_version":3,
+    "name":"enduring word extension", 
+    "version":"0.1.0",
+    "action":{
+        "default_popup":"popup.html",
+        "default_title":"enduring word"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://enduringword.com/bible-commentary/*"],
+            "js":["content.js"]
+        }
+    ],
+
+    "permissions":[
+        "tabs",
+        "storage"
+    ]
+}
+
